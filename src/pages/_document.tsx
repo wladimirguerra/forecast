@@ -13,6 +13,16 @@ export default function Document() {
           name="description"
           content="Web site created using create-react-app"
         />
+        {/* Add roboto font so the MUI library work properly */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+        {/* MUI icons font so it makes possible to use Icon component */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <body>
