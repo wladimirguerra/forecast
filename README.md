@@ -56,6 +56,14 @@ The output is generated inside the .next folder.\
 
 See the section about [deployment](https://nextjs.org/docs/deployment#nextjs-build-api) for more information.
 
+### `npm run storybook`
+
+Start `storybook` locally to preview project specific components and pages.
+
+### `npm run build-storybook`
+
+Build `storybook` stories.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
