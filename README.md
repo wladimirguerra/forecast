@@ -13,16 +13,16 @@ This is a single page app that shows US addresses forecast.
 The app uses [United States Census Bureau API](https://geocoding.geo.census.gov/geocoder/locations/onelineaddress) to get
 the latitude and longitude from a US address.
 
-> __ATTENTION!!__
+> **ATTENTION!!**
 >
 > Due to https://geocoding.geo.census.gov CORS restriction to `localhost` origin,
 > it was needed to deploy a proxy to make tests running on local machine.
 >
 > The server will be available for a short period of time, and then will be
-> shutdown for security reasons. So, this app will not work on `localhost` 
+> shutdown for security reasons. So, this app will not work on `localhost`
 > nor in `development` environment after that.
-> 
-> To make it work again a new working proxy server address must be added to 
+>
+> To make it work again a new working proxy server address must be added to
 > GEOCODE_API_ENDPOINT at `.env.development` file.
 
 ### Forecast API
