@@ -6,4 +6,13 @@ module.exports = {
       "<rootDir>/__mocks__/fileMock.ts",
   },
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+  globals: {
+    "ts-jest": {
+      // https://huafu.github.io/ts-jest/user/config/#options for details on cofiguration
+
+      // Due to the nature of Next.Js of autoconfigure tsconfig.json file,
+      // it is a must to split the ts-jest typescript configuration
+      tsconfig: "tsconfig.test.json",
+    },
+  },
 };

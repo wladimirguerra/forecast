@@ -8,26 +8,24 @@ It uses the [MUI component library](https://mui.com).
 
 This is a single page app that shows US addresses forecast.
 
-### Geocoding
-
-The app uses [United States Census Bureau API](https://geocoding.geo.census.gov/geocoder/locations/onelineaddress) to get
-the latitude and longitude from a US address.
-
-> **ATTENTION!!**
->
-> Due to https://geocoding.geo.census.gov CORS restriction to `localhost` origin,
-> it was needed to deploy a proxy to make tests running on local machine.
->
-> The server will be available for a short period of time, and then will be
-> shutdown for security reasons. So, this app will not work on `localhost`
-> nor in `development` environment after that.
->
-> To make it work again a new working proxy server address must be added to
-> GEOCODE_API_ENDPOINT at `.env.development` file.
-
 ### Forecast API
 
 The forecast is obtained from [OpenWeatherMap API](https://openweathermap.org/api/one-call-3).
+
+> Call 5 day / 3 hour forecast data [API documentation](https://openweathermap.org/forecast5)
+
+## Steps to Run
+
+To proper run this project the environment variable `WEATHER_API_KEY` must 
+be set with an API key from OpenWeatherMap.
+
+For security reasons the proper place to put this environment variable is
+in the `.env.local` file. It is ignored by git so the key is not exposed
+to the repository.
+
+This application uses __3-hour Forecast 5 days__ API endpoint. So it is
+available in their [Free plan](https://openweathermap.org/price) at the moment this application is
+being developed.
 
 ## Available Scripts
 

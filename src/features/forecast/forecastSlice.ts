@@ -1,5 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { DailyForecast } from "./forecastAPI";
+
+export interface DailyForecast {
+  day: Date;
+  humidity: number;
+  dayTemperature: number;
+  morningTemperature: number;
+  nightTemperature: number;
+  meanTemperature: number;
+  maximumTemperature: number;
+  minimumTemperature: number;
+  feelsLikeTemperature: number;
+  mode: number;
+}
 
 export interface ForecastState {
   daysForecast: DailyForecast[];
@@ -13,12 +25,12 @@ export const forecastSlice = createSlice({
     daysForecast: [],
   } as ForecastState,
   reducers: {},
-  extraReducers: (builder) => {},
+  extraReducers: (/*builder*/) => {},
 });
 
 // Selectors
 
-export const {
+/*export const {
   // TODO fill the actions
-} = forecastSlice.actions;
+} = forecastSlice.actions;*/
 export default forecastSlice.reducer;
