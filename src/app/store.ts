@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import forecastReducer from "../features/forecast/forecastSlice";
+import geocodingReducer from "../features/geocoding/geocodingSlice";
 
 export const store = configureStore({
   reducer: {
     forecast: forecastReducer,
+    geocoding: geocodingReducer,
   },
 });
 

@@ -3,17 +3,7 @@
  *
  * The calls are made to the [Open Weather Map]{@link https://openweathermap.org/forecast5}
  */
-
-interface GeoCoordinates {
-  /**
-   * latitude
-   */
-  lat: number;
-  /**
-   * longitude
-   */
-  lon: number;
-}
+import { GeoCoordinates } from "../interfaces";
 
 interface FiveDaysThreeHoursForecastListItem {
   /**
@@ -37,12 +27,12 @@ interface FiveDaysThreeHoursForecastListItem {
      * Minimum daily temperature
      * @see {@link ForecastApiRequestQueryParams.units} about the unit.
      */
-    min: number;
+    temp_min: number;
     /**
      * Maximum daily temperature
      * @see {@link ForecastApiRequestQueryParams.units} about the unit.
      */
-    max: number;
+    temp_max: number;
     /**
      * Unit: %
      */
