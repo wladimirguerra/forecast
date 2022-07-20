@@ -88,6 +88,10 @@ const DailyForecastPanel: React.FC<DailyForecastPanelProps> = (props) => {
           sx: "100%",
           sm: 300,
         },
+        minWidth: {
+          sx: "100%",
+          sm: 300,
+        },
       }}
     >
       <Box display={"flex"} justifyContent={"space-between"}>
@@ -99,7 +103,7 @@ const DailyForecastPanel: React.FC<DailyForecastPanelProps> = (props) => {
           >
             {moment(forecast.day).format("dddd,").toUpperCase()}
           </Typography>
-          <Typography variant={"h5"} component={"div"} noWrap>
+          <Typography variant={"h6"} component={"div"} noWrap>
             {moment(forecast.day).format(" MMMM Do")}
           </Typography>
         </Box>
